@@ -101,32 +101,106 @@ const PROJECTS = [
 const BLOG_POSTS = [
   {
     id: 1,
-    title: "O Futuro da Análise de Dados em 2025",
-    excerpt: "Como a IA generativa está mudando a forma como analistas de dados trabalham no dia a dia.",
+    title: "O Futuro da Análise de Dados em 2026",
+    excerpt: "Como a IA generativa está mudando a forma como analistas de dados trabalham e quais habilidades serão essenciais nos próximos anos.",
     date: "05 Mar, 2026",
     readTime: "5 min",
     category: "Tecnologia",
-    image: "https://picsum.photos/seed/blog1/800/500"
+    image: "https://picsum.photos/seed/blog1/800/500",
+    content: [
+      "A Análise de Dados está passando por uma transformação sem precedentes. Com a chegada de ferramentas de Inteligência Artificial generativa como o ChatGPT, Gemini e Copilot, o trabalho do analista mudou — e muito.",
+      "## O que está mudando?",
+      "Antes, um analista passava horas escrevendo queries SQL, limpando planilhas e formatando relatórios. Hoje, com IA, essas tarefas podem ser aceleradas em até 10x. Mas isso não significa que o analista será substituído — significa que ele precisa evoluir.",
+      "## As habilidades mais valorizadas em 2026",
+      "🔹 **Python + IA** — Combinar Python com APIs de IA para automatizar análises complexas\n🔹 **Storytelling com dados** — Transformar números em histórias que convençam tomadores de decisão\n🔹 **SQL avançado** — Ainda essencial, mas agora combinado com ferramentas de BI modernas\n🔹 **Machine Learning básico** — Entender modelos preditivos para aplicar em problemas reais\n🔹 **Comunicação** — O analista que sabe apresentar dados tem vantagem enorme no mercado",
+      "## O que fazer agora?",
+      "Invista no aprendizado contínuo. O mercado de dados no Brasil está crescendo e a demanda por profissionais qualificados supera a oferta. Quem se preparar hoje colherá os frutos nos próximos anos. Como dizia Heráclito: a única constante é a mudança. E no mundo dos dados, isso nunca foi tão verdadeiro.",
+      "**— Káliton Thyago, Analista de Dados**"
+    ]
   },
   {
     id: 2,
     title: "SQL vs NoSQL: Qual escolher para seu projeto?",
-    excerpt: "Um guia prático para entender as diferenças fundamentais e quando aplicar cada tecnologia.",
-    date: "02 Mar, 2026",
+    excerpt: "Um guia prático para entender as diferenças fundamentais e quando aplicar cada tecnologia no seu trabalho como analista.",
+    date: "07 Mar, 2026",
     readTime: "8 min",
     category: "Tutoriais",
-    image: "https://picsum.photos/seed/blog2/800/500"
+    image: "https://picsum.photos/seed/blog2/800/500",
+    content: [
+      "Uma das dúvidas mais comuns de quem está começando na área de dados é: devo aprender SQL ou NoSQL? A resposta é: depende do problema que você quer resolver.",
+      "## O que é SQL?",
+      "SQL (Structured Query Language) é a linguagem usada em bancos de dados relacionais como MySQL, PostgreSQL e SQL Server. Os dados são organizados em tabelas com linhas e colunas — parecido com uma planilha Excel, mas muito mais poderoso.",
+      "**Quando usar SQL:**\n✅ Dados estruturados e bem definidos\n✅ Relatórios financeiros e contábeis\n✅ Análise de vendas e clientes\n✅ Quando a consistência dos dados é crítica",
+      "## Exemplo prático em SQL",
+      "```sql\nSELECT regiao, SUM(valor) as total\nFROM vendas\nGROUP BY regiao\nHAVING SUM(valor) > 10000\nORDER BY total DESC;```",
+      "## O que é NoSQL?",
+      "NoSQL são bancos de dados não relacionais como MongoDB e Redis. Armazenam dados de forma flexível — documentos JSON, grafos, chave-valor.",
+      "**Quando usar NoSQL:**\n✅ Dados não estruturados (textos, imagens, logs)\n✅ Aplicações que precisam escalar rapidamente\n✅ Redes sociais e dados em tempo real",
+      "## Conclusão",
+      "Para a maioria dos analistas, **SQL é o ponto de partida obrigatório**. Está presente em praticamente todas as empresas e é requisito em 90% das vagas de dados. O NoSQL é um diferencial valioso para quem já domina o básico.",
+      "**— Káliton Thyago, Analista de Dados**"
+    ]
   },
   {
     id: 3,
-    title: "Primeiros passos com Python para Finanças",
-    excerpt: "Aprenda a automatizar seus relatórios financeiros usando as bibliotecas Pandas e NumPy.",
-    date: "28 Fev, 2026",
+    title: "Primeiros passos com Python para Análise de Dados",
+    excerpt: "Aprenda a usar Python com Pandas e Matplotlib para analisar dados reais e criar visualizações profissionais do zero.",
+    date: "10 Mar, 2026",
     readTime: "12 min",
     category: "Análise de Dados",
-    image: "https://picsum.photos/seed/blog3/800/500"
+    image: "https://picsum.photos/seed/blog3/800/500",
+    content: [
+      "Python é a ferramenta número 1 de analistas e cientistas de dados no mundo. Com ele você consegue analisar milhões de linhas de dados em segundos, criar gráficos profissionais e automatizar relatórios inteiros.",
+      "## Por que Python para dados?",
+      "🐍 **Pandas** — Manipula tabelas de dados como planilhas turbinadas\n📊 **Matplotlib** — Cria gráficos e visualizações profissionais\n🔢 **NumPy** — Cálculos matemáticos ultrarrápidos\n🤖 **Scikit-learn** — Machine Learning acessível",
+      "## Seu primeiro código de análise",
+      "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndados = {'Mes': ['Jan','Fev','Mar','Abr'],'Vendas': [15000,18500,14200,22000]}\ndf = pd.DataFrame(dados)\n\nprint('Média:', df['Vendas'].mean())\nprint('Total:', df['Vendas'].sum())\n\nplt.plot(df['Mes'], df['Vendas'], marker='o')\nplt.title('Evolução de Vendas')\nplt.show()```",
+      "## Onde praticar gratuitamente?",
+      "O **Google Colab** é perfeito para começar — funciona direto no navegador, sem instalar nada. Acesse colab.research.google.com, crie um notebook e comece a codar.",
+      "## Dica final",
+      "Não tente aprender tudo de uma vez. Comece com um problema real do seu trabalho — uma planilha que você recebe todo mês — e tente automatizá-lo com Python. Aprender na prática é muito mais eficaz.",
+      "**— Káliton Thyago, Analista de Dados**"
+    ]
   }
 ];
+
+
+// Modal do Mini Curso
+const PostModal = ({ post, onClose }: { post: typeof BLOG_POSTS[0], onClose: () => void }) => (
+  <div className="fixed inset-0 z-[999] flex items-start justify-center p-4 pt-16 overflow-y-auto" onClick={onClose}>
+    <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+    <div
+      className="relative glass rounded-3xl p-8 max-w-3xl w-full z-10 shadow-2xl shadow-primary/20 mb-8"
+      onClick={e => e.stopPropagation()}
+    >
+      <button onClick={onClose} className="absolute top-5 right-5 text-white/40 hover:text-white transition-colors">
+        <X size={22} />
+      </button>
+      <span className="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">{post.category}</span>
+      <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+      <p className="text-white/50 text-sm mb-6">{post.excerpt}</p>
+
+      <div className="bg-black/40 rounded-2xl p-6 mb-6 font-mono text-sm overflow-x-auto">
+        {post.content.map((line, i) => (
+          <div key={i} className={`${line.startsWith('#') ? 'text-primary font-bold text-base mt-4 mb-2' : line.startsWith('```') ? 'text-yellow-400/60 text-xs' : line.startsWith('//') ? 'text-green-400/70' : 'text-white/80'} whitespace-pre`}>
+            {line || <br />}
+          </div>
+        ))}
+      </div>
+
+      <a
+        href={post.colab}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-primary flex items-center justify-center gap-2 w-full"
+      >
+        <ExternalLink size={18} />
+        Praticar no Google Colab (Grátis)
+      </a>
+      <p className="text-white/30 text-xs text-center mt-3">Abra o Google Colab, cole o código e execute — sem instalar nada!</p>
+    </div>
+  </div>
+);
 
 const PARTNERS = [
   { id: 1, name: "EBAC", desc: "Escola Britânica de Artes Criativas", link: "https://ebaconline.com.br", logo: "https://picsum.photos/seed/ebac/200/100" },
@@ -315,7 +389,7 @@ const Hero = () => {
             Transformando <span className="gradient-text">Dados</span> em Decisões Estratégicas
           </h1>
           <p className="text-lg text-white/60 mb-8 max-w-lg">
-            Olá, eu sou <strong>Káliton Thyago</strong>. Analista de Dados Jr especializado em Python, SQL e visualização de dados. Ajudo empresas a extraírem valor real de seus ativos de informação.
+            Olá, eu sou <strong>Káliton Thyago</strong>. Analista de Dados especializado em Python, SQL e visualização de dados. Ajudo empresas a extraírem valor real de seus ativos de informação.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#portfolio" className="btn-primary">Ver Projetos</a>
@@ -352,7 +426,7 @@ const Hero = () => {
               <div className="glass p-4 rounded-2xl flex items-center justify-between">
                 <div>
                   <p className="text-xs text-white/60 uppercase tracking-widest">Experiência</p>
-                  <p className="font-bold">Analista de Dados Jr</p>
+                  <p className="font-bold">Analista de Dados</p>
                 </div>
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                   <TrendingUp size={24} />
@@ -405,7 +479,7 @@ const About = () => {
             <SectionHeading title="Paixão por transformar números em histórias" subtitle="Sobre Mim" />
             <div className="space-y-6 text-white/70 text-lg leading-relaxed">
               <p>
-                Iniciei minha jornada na tecnologia com um objetivo claro: ajudar pessoas e empresas a tomarem decisões baseadas em evidências, não em palpites. Como <strong>Analista de Dados Jr</strong>, foco em criar pontes entre dados brutos e insights acionáveis.
+                Iniciei minha jornada na tecnologia com um objetivo claro: ajudar pessoas e empresas a tomarem decisões baseadas em evidências, não em palpites. Como <strong>Analista de Dados</strong>, foco em criar pontes entre dados brutos e insights acionáveis.
               </p>
               <p>
                 Minha formação na <strong>EBAC</strong> em Análise de Dados e Backend Java me proporcionou uma visão 360º do ciclo de vida do dado — desde a coleta e processamento até a visualização final e integração com sistemas robustos.
@@ -596,14 +670,13 @@ const Portfolio = () => {
 };
 
 const Blog = () => {
+  const [selectedPost, setSelectedPost] = useState<typeof BLOG_POSTS[0] | null>(null);
   return (
     <section id="blog" className="py-24">
+      {selectedPost && <PostModal post={selectedPost} onClose={() => setSelectedPost(null)} />}
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-16">
           <SectionHeading title="Conteúdo & Insights" subtitle="Blog Diário" />
-          <a href="#" className="hidden md:flex items-center gap-2 text-primary font-bold hover:underline">
-            Ver todos os posts <ChevronRight size={18} />
-          </a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -615,6 +688,7 @@ const Blog = () => {
               transition={{ delay: idx * 0.1 }}
               viewport={{ once: true }}
               className="group cursor-pointer"
+              onClick={() => setSelectedPost(post)}
             >
               <div className="relative h-56 rounded-3xl overflow-hidden mb-6">
                 <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -641,36 +715,82 @@ const Blog = () => {
 };
 
 const PartnersSection = () => {
+  const steps = [
+    {
+      num: "01",
+      title: "Fundamentos do Python",
+      desc: "Variáveis, listas, dicionários e loops. A base de tudo.",
+      code: "nome = 'Káliton'\nvendas = [1500, 2300, 1800]\nprint(sum(vendas))  # 5600",
+      color: "from-blue-500 to-primary"
+    },
+    {
+      num: "02",
+      title: "Pandas — Manipulando Dados",
+      desc: "Carregue, filtre e transforme dados como uma planilha turbinada.",
+      code: "import pandas as pd\ndf = pd.read_csv('vendas.csv')\ndf[df['valor'] > 1000]",
+      color: "from-primary to-purple-500"
+    },
+    {
+      num: "03",
+      title: "Visualização com Matplotlib",
+      desc: "Transforme números em gráficos profissionais para apresentações.",
+      code: "import matplotlib.pyplot as plt\nplt.plot(meses, receita)\nplt.show()",
+      color: "from-purple-500 to-secondary"
+    }
+  ];
+
   return (
     <section className="py-24 bg-dark-card/30">
       <div className="max-w-7xl mx-auto px-6">
-        <SectionHeading title="Empresas que Confiam" subtitle="Parceiros & Afiliados" centered />
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {PARTNERS.map(partner => (
-            <a 
-              key={partner.id} 
-              href={partner.link} 
-              className="glass p-8 rounded-3xl flex flex-col items-center text-center group card-hover"
+        <SectionHeading title="Mini Curso de Python" subtitle="Análise de Dados na Prática" centered />
+        <p className="text-center text-white/50 text-sm mb-12 max-w-xl mx-auto">
+          Aprenda Python para Análise de Dados do zero — gratuitamente. Pratique direto no Google Colab, sem instalar nada.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {steps.map((step, idx) => (
+            <motion.div
+              key={step.num}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.15 }}
+              viewport={{ once: true }}
+              className="glass p-8 rounded-3xl"
             >
-              <img src={partner.logo} alt={partner.name} className="h-12 w-auto grayscale group-hover:grayscale-0 transition-all mb-4" />
-              <h4 className="font-bold mb-1">{partner.name}</h4>
-              <p className="text-[10px] text-white/40 uppercase tracking-widest">{partner.desc}</p>
-            </a>
+              <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-black text-lg mb-5`}>
+                {step.num}
+              </div>
+              <h4 className="text-lg font-bold mb-2">{step.title}</h4>
+              <p className="text-white/50 text-sm mb-5">{step.desc}</p>
+              <pre className="bg-black/50 rounded-xl p-4 text-xs text-green-300 font-mono overflow-x-auto">{step.code}</pre>
+            </motion.div>
           ))}
         </div>
-        
-        <div className="mt-16 glass p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex items-center gap-6">
-            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
-              <Award size={32} />
-            </div>
-            <div>
-              <h4 className="text-xl font-bold">Recomendado por Káliton</h4>
-              <p className="text-white/60 text-sm">Ferramentas e cursos que utilizo no meu dia a dia profissional.</p>
-            </div>
+
+        <div className="glass p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h4 className="text-xl font-bold mb-1">Baixe o material completo em PDF!</h4>
+            <p className="text-white/50 text-sm">PDF com todo o conteúdo, código explicado linha por linha e exercícios práticos. 100% grátis.</p>
           </div>
-          <button className="btn-primary whitespace-nowrap">Ver Recomendações</button>
+          <div className="flex gap-3 flex-wrap justify-center">
+            <a
+              href="https://raw.githubusercontent.com/KalitonOliveira001/-meu-portfolio/main/mini-curso-python-kaliton.pdf"
+              download="mini-curso-python-kaliton.pdf"
+              className="btn-primary whitespace-nowrap flex items-center gap-2"
+            >
+              <Download size={18} />
+              Baixar PDF Grátis
+            </a>
+            <a
+              href="https://colab.research.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass py-3 px-6 rounded-full font-semibold hover:bg-white/10 transition-all whitespace-nowrap flex items-center gap-2"
+            >
+              <ExternalLink size={18} />
+              Abrir Google Colab
+            </a>
+          </div>
         </div>
       </div>
     </section>
