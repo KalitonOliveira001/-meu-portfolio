@@ -266,7 +266,7 @@ const ContactModal = ({ service, onClose }: { service: string, onClose: () => vo
       <p className="text-white/50 text-sm mb-8">Serviço: <span className="text-primary font-semibold">{service}</span><br/>Entre em contato para receber seu orçamento personalizado.</p>
       <div className="flex flex-col gap-4">
         <a
-          href={`mailto:akalitonthyago12@gmail.com?subject=Interesse em Serviço — ${service}&body=Olá Káliton! Tenho interesse no serviço de ${service}. Minha demanda é:%0A%0A`}
+          href={`mailto:analistadedadoskaliton@gmail.com?subject=Interesse em Serviço — ${service}&body=Olá Káliton! Tenho interesse no serviço de ${service}. Minha demanda é:%0A%0A`}
           className="btn-primary text-center flex items-center justify-center gap-2"
         >
           <Mail size={18} /> Enviar E-mail
@@ -875,8 +875,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-white/40 mb-1">E-mails Profissionais</p>
-                  <p className="text-lg font-bold">akalitonthyago12@gmail.com</p>
                   <p className="text-lg font-bold">analistadedadoskaliton@gmail.com</p>
+                  <p className="text-lg font-bold">kalitonthyago12@gmail.com</p>
                 </div>
               </div>
               
@@ -916,7 +916,7 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-bold uppercase tracking-widest text-white/40">Seu E-mail</label>
-                  <input type="email" placeholder="akalitonthyago12@gmail.com" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:border-primary outline-none transition-all" />
+                  <input type="email" placeholder="seu@email.com" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:border-primary outline-none transition-all" />
                 </div>
               </div>
               <div className="space-y-2">
@@ -1056,7 +1056,7 @@ export default function App() {
               <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input 
                   type="email" 
-                  placeholder="akalitonthyago12@gmail.com" 
+                  placeholder="seu@email.com" 
                   className="flex-grow bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-primary transition-all"
                 />
                 <button type="submit" className="btn-primary">Inscrever</button>
