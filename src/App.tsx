@@ -966,7 +966,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/5 text-center text-xs text-white/20">
-          <p>© 2026 Káliton Thyago Marcelino de Oliveira. Todos os direitos reservados.</p>
+          <p>© 2026 Káliton Thyago Marcelino de Oliveira · Analista de Dados · Todos os direitos reservados.</p>
           <p className="mt-2 italic">Desenvolvido com foco em performance e insights.</p>
         </div>
       </div>
